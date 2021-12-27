@@ -4,10 +4,10 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  //margin-right: auto;
+  //padding-left: 1em;
+  //padding-right: 1em;
+  padding: 0 0.5rem;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -16,6 +16,7 @@
 
   @include breakpoint($x-large) {
     max-width: $max-width;
+    //margin-left: 2%;
   }
 }
 
@@ -39,12 +40,12 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: calc(#{$right-sidebar-width-narrow} * 0.5);
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    padding-right: calc(#{$right-sidebar-width} * 0.5);
   }
 
   .page__inner-wrap {
@@ -69,8 +70,11 @@ body {
 }
 
 .page__title {
-  margin-top: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   line-height: 1;
+  font-family: $do-hyeon;
+  font-size: $type-size-2;
 
   a {
     color: $text-color;
@@ -88,12 +92,16 @@ body {
 }
 
 .page__content {
+
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25rem;
     border-bottom: 1px solid $border-color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
+    font-family: $do-hyeon;
+    font-weight: 400;
+
 		.header-link {
 			position: relative;
 			left: 0.5em;
@@ -103,6 +111,7 @@ body {
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
 			transition: opacity 0.2s ease-in-out 0.1s;
+      color: $primary-color;
 		}
 
 		&:hover .header-link {
@@ -113,7 +122,8 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: $type-size-6;
+    font-family: $noto-sans;
   }
 
   /* paragraph indents */
@@ -280,14 +290,28 @@ body {
 }
 
 /*
+   Page date
+   ========================================================================== */
+.page__date {
+  display: inline-block;
+  padding: 0 1rem 1rem 0;
+  font-size: $type-size-8;
+}
+
+/*
    Page meta
    ========================================================================== */
 
 .page__meta {
-  margin-top: 2em;
+  margin-bottom: 2rem;
   color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
+  padding: 0.5rem 1rem;
+  transition: $transition-box-shadow;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  cursor: pointer;
 
   p {
     margin: 0;
@@ -327,15 +351,20 @@ body {
 .page__taxonomy-item {
   display: inline-block;
   margin-right: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
-  border-radius: $border-radius;
+  //border: 1px solid mix(#000, $border-color, 25%);
+  background-color: $custom-light-gray;
+  color: $custom-light-gray;
+  border-radius: 16px;
+  box-shadow: $box-shadow;
 
   &:hover {
     text-decoration: none;
     color: $link-color-hover;
+    background-color: $custom-dark-gray; //mix(#000, $custom-light-gray, 50%);
+    color: $background-color
   }
 }
 

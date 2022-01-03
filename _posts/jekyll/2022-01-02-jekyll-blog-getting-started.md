@@ -1,5 +1,5 @@
 ---
-title: "[Jekyll+Github Blog] 블로그 시작하기"
+title: "[Jekyll Blog] 블로그 시작하기"
 categories:
   - Jekyll-Blog
 tags:
@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-> Jekyll + Github Pages로 개발 블로그 만들기💎
+> 💎Jekyll + Github Pages로 개발 블로그 만들기💎
 
 # [1] Ruby 설치하기
 

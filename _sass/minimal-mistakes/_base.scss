@@ -361,3 +361,9 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+ul {
+  @include breakpoint(375px) {
+    padding-left: 1rem;
+  }
+}

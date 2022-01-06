@@ -1,11 +1,12 @@
 ---
-title: "[HTTP] 멱등성과 HTTP 메서드"
+title: "[HTTP] 멱등성(indempotency)"
 categories:
   - HTTP
 toc: true
 toc_sticky: true
 ---
 
+> 
 
 # [1] 멱등성이란?
 - [네이버 국어사전](https://ko.dict.naver.com/#/entry/koko/3b4f7ca2ddb64633a9607112fb4af0e0)에 의하면 멱등성은 **'연산을 여러 번 적용하더라도 결과값이 달라지지 않는 성질'**을 의미한다.
@@ -39,3 +40,6 @@ DELETE items/100/delete HTTP/1.1   #404
 ```
 
 여기서 중요한 것은 해당 메서드가 멱등성을 가지는 지 따져볼 때 응답의 일치여부가 아닌 **첫 번째 요청과 그 이후의 요청을 처리한 후 서버의 상태에 변동이 없는지**가 기준이 된다는 것이다.
+
+# 참고
+- [MDN Docs](https://developer.mozilla.org/ko/docs/Glossary/Idempotent)

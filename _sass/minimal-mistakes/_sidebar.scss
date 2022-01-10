@@ -64,7 +64,6 @@
   }
 
   img {
-    width: 100%;
 
     &.emoji {
       width: 20px;
@@ -138,10 +137,10 @@
   }
 
   img {
-    max-width: 110px;
     border-radius: 50%;
 
-    @include breakpoint($large) {
+    @include breakpoint(520px) {
+      max-width: 100px;
       padding: 5px;
       border: 1px solid $border-color;
     }
@@ -154,6 +153,10 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+
+  @include breakpoint(520px) {
+    width: 750px;
+  }
 
   @include breakpoint($large) {
     display: block;
@@ -199,8 +202,8 @@
 
 .author__urls-wrapper {
   position: relative;
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
+  //vertical-align: middle;
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;
@@ -228,7 +231,7 @@
   button {
     position: relative;
     margin-bottom: 0;
-
+    float: right;
     &:before {
       @supports (pointer-events: none) {
         content: '';

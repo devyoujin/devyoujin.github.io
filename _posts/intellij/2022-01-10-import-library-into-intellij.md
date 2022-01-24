@@ -3,7 +3,8 @@ title: "[IntelliJ] 외부 라이브러리 import하기"
 categories:
   - IntelliJ
 tags:
-  - IDE
+  - IntelliJ
+  - Tool
   - How-To
 toc: true
 toc_sticky: true

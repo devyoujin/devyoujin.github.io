@@ -4,8 +4,8 @@ categories:
   - Jekyll-Blog
 tags:
   - Jekyll
-  - Github
   - Blog
+  - Github-Pages
 toc: true
 toc_sticky: true
 ---

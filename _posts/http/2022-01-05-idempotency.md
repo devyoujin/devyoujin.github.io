@@ -2,6 +2,9 @@
 title: "[HTTP] 멱등성(indempotency)"
 categories:
   - HTTP
+tags:
+  - HTTP
+  - Web
 toc: true
 toc_sticky: true
 ---

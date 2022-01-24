@@ -1,10 +1,11 @@
 ---
-title: "[API] Java로 외부 API 호출하기(GET, POST 요청)"
+title: "[Java] HttpURLConnection으로 외부 API 호출하기(GET, POST 요청)"
 categories:
-  - API
-tags:
-  - Web
   - Java
+tags:
+  - Java
+  - Web
+  - API
   - How-To
 toc: true
 toc_sticky: true

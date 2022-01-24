@@ -4,8 +4,6 @@ categories:
   - Linux
 tags:
   - Linux
-toc: true
-toc_sticky: true
 ---
 
 > 

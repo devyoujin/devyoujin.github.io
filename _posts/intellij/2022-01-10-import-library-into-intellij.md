@@ -6,8 +6,6 @@ tags:
   - IntelliJ
   - Tool
   - How-To
-toc: true
-toc_sticky: true
 ---
 
 > 인텔리제이 빌더를 사용하는 일반 프로젝트에서 외부 라이브러리를 추가하는 방법

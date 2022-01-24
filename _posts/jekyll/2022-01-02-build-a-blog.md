@@ -6,8 +6,6 @@ tags:
   - Jekyll
   - Blog
   - Github-Pages
-toc: true
-toc_sticky: true
 ---
 
 > 💎Jekyll + Github Pages로 개발 블로그 만들기💎

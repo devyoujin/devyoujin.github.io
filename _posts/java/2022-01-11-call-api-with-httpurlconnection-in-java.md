@@ -7,8 +7,6 @@ tags:
   - Web
   - API
   - How-To
-toc: true
-toc_sticky: true
 ---
 
 > Java 라이브러리 `HttpURLConnection`을 이용하여 외부 API를 호출하고 테스트 서버를 통해 테스트해본다.

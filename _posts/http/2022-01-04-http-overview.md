@@ -5,8 +5,6 @@ categories:
 tags:
   - HTTP
   - Web
-toc: true
-toc_sticky: true
 ---
 
 > HTTP 간략하게 보기

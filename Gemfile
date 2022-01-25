@@ -7,3 +7,4 @@ gem "kramdown-parser-gfm"
 gem "webrick", "~> 1.7"
 gem "jemoji"
 gem "github-pages", group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0'

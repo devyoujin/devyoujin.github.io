@@ -75,6 +75,7 @@ body {
   line-height: 1;
   font-family: $do-hyeon;
   font-size: $type-size-2;
+  color: $footer-background-color;
 
   a {
     color: $text-color;
@@ -356,9 +357,10 @@ body {
   text-decoration: none;
   //border: 1px solid mix(#000, $border-color, 25%);
   background-color: $custom-light-gray;
-  color: $custom-light-gray;
+  //color: $custom-light-gray;
   border-radius: 16px;
   box-shadow: $box-shadow;
+  font-weight: bold;
 
   &:hover {
     text-decoration: none;
@@ -396,7 +398,12 @@ body {
 }
 
 .taxonomy__count {
-  color: $muted-text-color;
+  color: $background-color;
+  font-weight: bold;
+  line-height: 2;
+  background-color: $primary-color;
+  padding: 0 0.5rem;
+  border-radius: 15px;
 }
 
 .taxonomy__index {
@@ -424,6 +431,11 @@ body {
     text-decoration: none;
     border-bottom: 1px solid $border-color;
   }
+
+  .page__taxonomy-item {
+    margin: 0;
+  }
+
 }
 
 .back-to-top {

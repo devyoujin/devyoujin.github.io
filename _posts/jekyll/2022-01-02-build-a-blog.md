@@ -122,7 +122,6 @@ url                      : "https://<username>.github.io"
 baseurl                  : ""
 repository               : "<username>/<username>.github.io"
 ```
-- 🖐**주의**🖐 `baseurl`은 `/home`, `/blog` 등 다양하게 설정할 수 있는데 기본 경로로 설정하고 싶다면 빈 문자열(`""`)로 설정해두어야한다.
 
 5. Github에 push한다.
 ```bash

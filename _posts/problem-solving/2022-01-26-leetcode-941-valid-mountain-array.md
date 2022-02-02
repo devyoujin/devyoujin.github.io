@@ -9,7 +9,7 @@ tags:
   - Java
 ---
 
-<a href="https://leetcode.com/problems/valid-mountain-array" class="btn btn--primary"> 문제 바로가기</a> <a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
+<a href="https://leetcode.com/problems/valid-mountain-array" class="btn btn--inverse"> 문제 바로가기</a> <a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
 
 # 🔥 문제
 정수 배열 `arr`가 주어지고 이 배열이 산 모양 배열일 때 `true`를 반환하여라.

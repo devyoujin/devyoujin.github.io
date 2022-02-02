@@ -8,7 +8,7 @@ tags:
   - Github-Pages
 ---
 
-> 💎Jekyll + Github Pages로 개발 블로그 만들기💎
+> 💎Jekyll + Github Pages로 개발 블로그 만들기 / Minimal-Mistakes 테마 커스터마이징하기💎
 
 # [1] favicon 생성
 favicon 설정을 쉽게 도와주는 사이트들이 있다.

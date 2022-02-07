@@ -1,5 +1,5 @@
 ---
-title: "[Jekyll Blog] Utterances로 댓글 기능 추가하기"
+title: "[Jekyll Blog] 댓글 기능 추가하기(feat. Utterances)"
 categories:
   - Jekyll-Blog
 tags:

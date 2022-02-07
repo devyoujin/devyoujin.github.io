@@ -32,3 +32,6 @@ Giscus는 [한국어 공식 문서](https://giscus.app/ko)를 제공하고 있�
 Discussion 맵핑 방식이나 script 코드를 적용하는 방식은 Utterances와 동일하다. 이전에 작성한 [[Jekyll Blog] 댓글 기능 추가하기(feat. Utterances)](https://dev-ujin.github.io/jekyll-blog/add-comments-with-utterances)에 자세하게 설명해두었니 참고할 수 있다.
 
 조만간 블로그에 어울리는 💜보라보라한 테마💜를 하나 만들어봐야겠다.
+
+# 참고
+- [Giscus Docs](https://giscus.app/)

@@ -27,7 +27,7 @@ int[] array1D = new int[5];
 ```
 ![1D Array]({{site.url}}{{site.baseurl}}/assets/img/java-live-study/1d-array.jpg)
 
-# [1] 2차 배열(2-Dimensional Array)
+# [2] 2차 배열(2-Dimensional Array)
 ## 선언
 ```java
 int[][] array2D; // valid
@@ -46,8 +46,8 @@ int[] array1[], array2; // array1은 int[][], array2는 int[]
 
 ## 초기화
 ```java
-array2D = new int[2][3]; // {{0, 0, 0}, {0, 0, 0}}
-array2D = {{1, 2, 3}, {11, 22, 33}}; 
+array2D = new int[2][3]; // { {0, 0, 0}, {0, 0, 0} }
+array2D = { {1, 2, 3}, {11, 22, 33} }; 
 
 // 물론 선언과 동시에 초기화도 가능
 int[][] array2D = new int[2][3];

@@ -1,5 +1,5 @@
 ---
-title: "[Java Live Study] 2-6. 1차, 2차 배열(1D, 2D Array Declaration)"
+title: "[Java Live Study] 2-6. 1차, 2차 배열(1D, 2D Array)"
 categories:
   - Java-Study
 tags:

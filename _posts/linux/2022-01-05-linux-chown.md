@@ -3,7 +3,7 @@ title: "[Linux] 소유자, 소유그룹 변경하기(chown)"
 categories:
   - Linux
 tags:
-  - Linux
+  - 🐧Linux
 ---
 
 > 

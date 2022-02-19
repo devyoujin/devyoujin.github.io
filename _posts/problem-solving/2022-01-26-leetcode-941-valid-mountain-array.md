@@ -1,12 +1,13 @@
 ---
 title: "[Leetcode/941] Valid Mountain Array 문제 번역/풀이"
 categories:
-  - Problem-Solving
+  - Leetcode
 tags:
   - Leetcode
+  - 🔥Problem-Solving
   - 🟢Easy
   - Array
-  - Java
+  - ☕Java
 ---
 
 <a href="https://leetcode.com/problems/valid-mountain-array" class="btn btn--inverse"> 문제 바로가기</a> <a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>

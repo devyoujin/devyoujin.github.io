@@ -4,7 +4,7 @@ categories:
   - HTTP
 tags:
   - HTTP
-  - Web
+  - 🕸Web
 ---
 
 > HTTP 간략하게 보기

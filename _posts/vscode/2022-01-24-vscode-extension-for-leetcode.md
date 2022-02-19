@@ -4,8 +4,7 @@ categories:
   - VSCode
 tags:
   - VSCode
-  - Tool
-  - How-To
+  - 🔨Tool
 ---
 
 > ✨ Visual Studio Code Extension for Leetcode ✨

@@ -3,8 +3,8 @@ title: "[Jekyll Blog] favicon 생성 및 설정"
 categories:
   - Jekyll-Blog
 tags:
-  - Jekyll
-  - Blog
+  - 🧪Jekyll
+  - 💜Blog
   - Github-Pages
 ---
 

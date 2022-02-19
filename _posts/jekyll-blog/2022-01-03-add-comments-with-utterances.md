@@ -3,8 +3,8 @@ title: "[Jekyll Blog] 댓글 기능 추가하기(feat. Utterances)"
 categories:
   - Jekyll-Blog
 tags:
-  - Jekyll
-  - Blog
+  - 🧪Jekyll
+  - 💜Blog
   - Github-Pages
 ---
 

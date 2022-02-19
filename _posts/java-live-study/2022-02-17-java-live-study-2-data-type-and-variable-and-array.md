@@ -1,10 +1,9 @@
 ---
 title: "[Java Live Study] 2. 자료형(Data Type), 변수(Variable), 배열(Array)"
 categories:
-  - Java-Study
+  - Java-Live-Study
 tags:
   - ☕Java
-  - Java-Live-Study
 ---
 
 > ⚓[백기선 강사님의 live study](https://github.com/whiteship/live-study)에 나온 주제들을 혼자 공부하고 정리하여 작성한 글입니다.⚓

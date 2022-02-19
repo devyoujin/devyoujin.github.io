@@ -3,7 +3,7 @@ title: "[Algorithm] 플로이드 순환 검출 알고리즘(Floyd's Cycle Detect
 categories:
   - Algorithm
 tags:
-  - Algorithm
+  - 💡Algorithm
 ---
 
 > a.k.a 토끼와 거북이 알고리즘(Tortoise🐢 & Hare🐇 Algorithm) / Slow & Fast Algorithm

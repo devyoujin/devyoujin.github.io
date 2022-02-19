@@ -3,8 +3,8 @@ title: "[Jekyll Blog] 네비게이션 메뉴 추가하기 (카테고리와 태�
 categories:
   - Jekyll-Blog
 tags:
-  - Jekyll
-  - Blog
+  - 🧪Jekyll
+  - 💜Blog
   - Github-Pages
 ---
 

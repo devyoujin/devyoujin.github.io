@@ -3,8 +3,8 @@ title: "[Jekyll Blog] 블로그 시작하기"
 categories:
   - Jekyll-Blog
 tags:
-  - Jekyll
-  - Blog
+  - 🧪Jekyll
+  - 💜Blog
   - Github-Pages
 ---
 

@@ -10,7 +10,7 @@ tags:
 
 📌 **3주차 목표**: Java의 다양한 연산자 학습하기
 
-<a href="https://github.com/dev-ujin/java-lab/tree/main/operator" class="btn btn--github"><i class="fab fa-github"></i> 소스코드</a>
+<a href="https://github.com/dev-ujin/java-lab/tree/main/java-live-study/operator" class="btn btn--github"><i class="fab fa-github"></i> 소스코드</a>
 
 # [0] 용어
 - 연산자: 특정한 연산을 수행하고 결과를 반환하는 기호이다.

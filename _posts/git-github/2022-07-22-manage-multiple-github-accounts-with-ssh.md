@@ -50,41 +50,51 @@ Host github.com-<회사용 GitHub username>
 ```
 나는 `GitHub username`을 사용하여 Host를 구분지었는데,  `github.com123`처럼 의미 없는 값이어도 상관 없다. **두 Host 값이 다르도록 설정해주기만 하면 된다.** 
 
+# [3] SSH client에 private key 등록
+```
+ssh-add -K ~/.ssh/org_id_rsa
+ssh-add -K ~/.ssh/per_id_rsa
+```
+- `-K`: MAC Keychain에 비밀번호 저장
 
-# [3] 각 GitHub 계정에 SSH public key 추가
-## 3-1. SSH 키 복사
+`-K` 옵션에 대해 에러가 나면 아래와 같이 실행한다. (참고: [GitHub Docs - Error: ssh-add: illegal option --K](https://docs.github.com/en/authentication/troubleshooting-ssh/error-ssh-add-illegal-option----k))
+```
+/usr/bin/ssh-add -K ~/.ssh/org_id_rsa
+/usr/bin/ssh-add -K ~/.ssh/per_id_rsa
+```
+
+```
+// 등록된 키 전부 조회
+ssh-add -l
+
+// 등록된 키 전부 등록 해제
+ssh-add -D
+```
+
+# [4] 각 GitHub 계정에 SSH public key 추가
+## 4-1. SSH 키 복사
 ```
 pbcopy < ~/.ssh/org_id_rsa.pub
 ```
 공개키를 클립보드에 복사한다.
 
-## 3-2. GitHub에 SSH 키 붙여넣기
+## 4-2. GitHub에 SSH 키 붙여넣기
 각각의 GitHub 계정에 로그인한다. `Settings > SSH and GPG keys > New SSH key`에 복사한 값을 붙여넣는다.
 
 
-# [4] 로컬 레포지토리 설정
-## 4-1. GitHub 계정 정보 설정
+# [5] 로컬 레포지토리 설정
+## 5-1. GitHub 계정 정보 설정
 레포지토리마다 사용할 GitHub 계정을 설정한다. 여기서 설정한대로 커밋 로그가 남는다.
 ```
 git config --local user.name "username"
 git config --local user.email "email@example.com"
 ```
 
-## 4-2. remote url 변경
+## 5-2. remote url 변경
 remote에서 clone을 해온 경우 `remote url`의 기본 값은 `git@github.com:<username>/<repository_name>.git`이다. 여기서 `@`뒤에 붙는 `github.com`을 [[2]](#2-ssh-config-설정)에서 설정한 Host 값과 동일하게 설정해준다.
 
 ```
 git remote set-url origin git@github.com-<GitHub username>:<username>/<repository_name>.git
-```
-
-# Trouble Shooting
-[GitHub 공식 문서](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)에 보면 `ssh-add` 명령어를 사용해서 SSH client에 private key를 등록하라고 나오는데 나한테는 이게 복병이었다. 키를 등록하면 다음번에 비밀번호를 입력하지 않고도 인증이 된다고 하는데 애초에 키를 생성할 때 비밀번호를 설정하지 않았다면 넘어가도 되는 부분이다. 결국 등록된 키를 다 해제하고 나서야 정상적으로 원격 저장소에 push가 가능했다.
-```
-// 등록된 키 전부 조회
-ssh-add -l
-
-// 등록된 키 해제
-ssh-add -D
 ```
 
 

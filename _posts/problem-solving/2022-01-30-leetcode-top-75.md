@@ -22,7 +22,7 @@ tags:
 |✅|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|🟢|
 |✅|238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|🟡|
 |✅|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_53_MaximumSubarray.md)|
-|✅|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_152_MaximumProductSubarray.md)
+|✅|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_152_MaximumProductSubarray.md)|
 |✅|153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_153_FindMinimuminRotatedSortedArray.md)|
 ||33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|🟡|
 ||15|[3Sum](https://leetcode.com/problems/3sum/)|🟡|
@@ -84,14 +84,14 @@ tags:
 
 # Linked List
 
-|Status|No.|Title|Difficulty|
-|:---:|---|---|:---:|
-||206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|🟢|
-|✅|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|🟢|
-||21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|🟢|
-||23|[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|🔴|
-||19|[Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|🟡|
-||143|[Reorder List](https://leetcode.com/problems/reorder-list/)|🟡|
+|Status|No.|Title|Difficulty|My Solution|
+|:---:|---|---|:---:|:---:|
+|✅|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|🟢|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_206_ReverseLinkedList.md)|
+|✅|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|🟢||
+|✅|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|🟢|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_21_MergeTwoSortedLists.md)|
+||23|[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|🔴||
+||19|[Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|🟡||
+||143|[Reorder List](https://leetcode.com/problems/reorder-list/)|🟡||
 
 
 # Matrix

@@ -11,19 +11,19 @@ tags:
 
 <a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
 
-- Difficulty: Easy - 🟢, Medium - 🟡, Hard - 🔴
+- Difficulty: 🟢(Easy), 🟡(Medium), 🔴(Hard)
 
 # Array
 
-|Status|No.|Title|Difficulty|
-|---|---|---|:---:|
-|✅|1|[Two Sum](https://leetcode.com/problems/two-sum/)|🟢|
-||121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|🟢|
-||217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|🟢|
-||238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|🟡|
-||53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|🟢|
-||152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|🟡|
-||153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|🟡|
+|Status|Nr.|Title|Difficulty|My Solution|
+|:---:|---|---|:---:|:---:|
+|✅|1|[Two Sum](https://leetcode.com/problems/two-sum/)|🟢||
+|✅|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|🟢||
+|✅|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|🟢|
+|✅|238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|🟡|
+|✅|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_53_MaximumSubarray.md)|
+|✅|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_152_MaximumProductSubarray.md)
+|✅|153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|🟡|[🗝](https://github.com/dev-ujin/java-problem-solving/blob/main/Leetcode_153_FindMinimuminRotatedSortedArray.md)|
 ||33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|🟡|
 ||15|[3Sum](https://leetcode.com/problems/3sum/)|🟡|
 ||11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|🟡|
@@ -32,7 +32,7 @@ tags:
 # Binary
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|🟡|
 ||191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|🟢|
 ||338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|🟢|
@@ -43,7 +43,7 @@ tags:
 # Dynamic Programming
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|🟢|
 ||322|[Coin Change](https://leetcode.com/problems/coin-change/)|🟡|
 ||300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|🟡|
@@ -60,7 +60,7 @@ tags:
 # Graph
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|🟡|
 ||207|[Course Schedule](https://leetcode.com/problems/course-schedule/)|🟡|
 ||417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|🟡|
@@ -74,7 +74,7 @@ tags:
 # Interval
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||57|[Insert Interval](https://leetcode.com/problems/insert-interval/)|🟡|
 ||56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|🟡|
 ||435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|🟡|
@@ -85,7 +85,7 @@ tags:
 # Linked List
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|🟢|
 |✅|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|🟢|
 ||21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|🟢|
@@ -97,7 +97,7 @@ tags:
 # Matrix
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|🟡|
 ||54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|🟡|
 ||48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|🟡|
@@ -108,7 +108,7 @@ tags:
 # String
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 |✅|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|🟡|
 ||424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|🟡|
 ||76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|🔴|
@@ -124,7 +124,7 @@ tags:
 # Tree
 
 |No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|🟢|
 ||100|[Same Tree](https://leetcode.com/problems/same-tree/)|🟢|
 ||226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|🟢|
@@ -144,7 +144,7 @@ tags:
 # Heap
 
 |Status|No.|Title|Difficulty|
-|---|---|---|:---:|
+|:---:|---|---|:---:|
 ||23|[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|🔴|
 ||347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|🟡|
 ||295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|🔴|

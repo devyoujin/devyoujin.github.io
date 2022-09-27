@@ -20,11 +20,10 @@
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
-
   </div>
- <div style="display: table-cell;">
+
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <!--<button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>-->
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
@@ -242,9 +241,5 @@
 
       {% include author-profile-custom-links.html %}
     </ul>
-    </div>
-    <div style="display: block; min-width: 80px;">
-      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdev-ujin.github.io&count_bg=%23917FB9&title_bg=%23271D2E&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/>
-    </div>
-    </div>
-    </div>
+  </div>
+</div>

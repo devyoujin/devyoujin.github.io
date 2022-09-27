@@ -16,18 +16,18 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Walking on the Moon"
+title                    : "Youjin's Engineering Blog"
 title_separator          : "-"
-subtitle                 : "Engineering Blog 개발블로그"
-name                     : "dev-ujin"
-description              : "Engineering Blog hosted by Github & Jekyll (Github & Jekyll로 만든 개발블로그입니다.)"
+subtitle                 : "유진의 기술 블로그"
+name                     : "Youjin Lee"
+description              : "독일 클라우드 백엔드 개발자의 기술 블로그"
 url                      : "https://dev-ujin.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "dev-ujin/dev-ujin.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : giscus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -104,25 +104,20 @@ analytics:
 
 # Site Author
 author:
-  name             : "dev-ujin"
+  name             : "Youjin Lee"
   avatar           : "https://avatars.githubusercontent.com/u/37237235?v=4"
-  bio              : "<details><summary>💜💜<strong>Welcome!</strong>💜💜</summary><ul>
-  <li>I am Backend Engineer👩‍💻, knitter🧶, and whiskey lover🥃.</li>
-  <li><a href='https://www.benew.io'>👉BENEW beta👈</a> 1.0.0 release soon!</li>
-  <li>Happy Lovely New Year!🎄🎇🎡</li>
-  </ul></details>" 
-#"💜🖤💜**Welcome!**💜🖤💜 <br> * I am Backend Engineer👩‍💻, knitter🧶, and whiskey lover🥃. ___ <br> * 👉[BENEW beta]👈(https://www.benew.io) 1.0.0 release soon! <br> * Happy Lovely New Year!🎄🎇🎡"
+  bio              : "Cloud Backend Engineer<br>in E-Commerce" 
   #location         : "Germany"
   #email            : 
   links:
     - label: "Portfolio"
-      icon: "fas fa-folder-open"
+      icon: "far fa-folder-open"
       url: "https://dev-ujin.github.io/portfolio"
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:dev.ujin518@gmail.com"
+      icon: "far fa-envelope"
+      url: "mailto:youjin.lee.dev@gmail.com"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-github-alt"
       url: "https://github.com/dev-ujin"
 
 # Site Footer

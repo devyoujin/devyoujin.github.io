@@ -17,16 +17,12 @@
   // }
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    width: calc(#{$right-sidebar-width-narrow} - 1.5em);
     //opacity: 0.75;
     //-webkit-transition: opacity 0.2s ease-in-out;
     //transition: opacity 0.2s ease-in-out;
     padding: 0.25rem 0.5rem;
     border-radius: $border-radius;
-
-    &:hover {
-        box-shadow: $box-shadow-hover;
-      }
 
     &.sticky {
       overflow-y: auto;
@@ -34,11 +30,18 @@
          viewport height - nav height - masthead x-padding
       */
       max-height: calc(100vh - #{$nav-height} - 2em);
+      text-align: center;
+      align-content: center;
+
+      .h-card {
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 15px
+      }
     }
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$right-sidebar-width} - 3em);
   }
 
   > * {
@@ -139,9 +142,9 @@
     border-radius: 50%;
 
     @include breakpoint(520px) {
-      max-width: 100px;
+      max-width: 150px;
       padding: 5px;
-      border: 1px solid $border-color;
+      //border: 1px solid $border-color;
     }
   }
 }
@@ -208,7 +211,9 @@
   cursor: pointer;
 
   li {
-    margin-bottom: 0;
+    margin-bottom: 6px;
+    background-color: $lighter-gray;
+    border-radius: $border-radius;
   }
 
   li:last-child {
@@ -269,9 +274,9 @@
   cursor: default;
 
 
-  &.is--visible {
+  /*&.is--visible {
     display: block;
-  }
+  }*/
 
   @include breakpoint($large) {
     display: block;
@@ -339,6 +344,12 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  i {
+    position: absolute;
+    left: 35px;
+    line-height: 24px;
   }
 }
 

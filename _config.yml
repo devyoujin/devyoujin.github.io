@@ -113,9 +113,9 @@ author:
     - label: "Portfolio"
       icon: "far fa-folder-open"
       url: "https://dev-ujin.github.io/portfolio"
-    - label: "Email"
+    - label: "youjin.lee.dev@gmail.com"
       icon: "far fa-envelope"
-      url: "mailto:youjin.lee.dev@gmail.com"
+      url: "mailTo:youjin.lee.dev@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github-alt"
       url: "https://github.com/dev-ujin"
@@ -281,6 +281,6 @@ defaults:
       # read_time: true
       comments: true
       toc: true
-      toc_sticky: true  
       #share: true
       #related: true
+      category_nav: true

@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("#main").fitVids();
 
   // Sticky sidebar
-  var stickySideBar = function() {
+  /*var stickySideBar = function() {
     var show =
       $(".author__urls-wrapper button").length === 0
         ? $(window).width() > 1024 // width should match $large Sass variable
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     stickySideBar();
-  });
+  });*/
 
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {

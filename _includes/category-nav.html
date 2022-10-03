@@ -1,0 +1,103 @@
+<div class="category-nav__wrapper">
+    <ul class="text-left">
+        <li>
+            <!-- My Dev Story -->
+            <span class="category-nav__title">My Dev Story</span>
+            <ul class="category-nav__item">
+                {% for category in site.categories %}
+                    {% if category[0] == "Junior-Developer" %}
+                        <li><a href="/categories/junior-developer" class="">As Junior Developer</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% for category in site.categories %}
+                    {% if category[0] == "Toy-Project" %}
+                        <li><a href="/categories/toy-project" class="">Toy Project</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Web Backend -->
+            <span class="category-nav__title">Web Backend</span>
+            <ul class="category-nav__item">
+                {% for category in site.categories %}
+                    {% if category[0] == "Java" %}
+                        <li><a href="/categories/java" class="">Java</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+     
+                {% for category in site.categories %}
+                    {% if category[0] == "Spring" %}
+                        <li><a href="/categories/spring" class="">Spring</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- CS -->
+            <span class="category-nav__title">CS</span>
+            <ul class="category-nav__item">
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">Algorithm</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+    
+                {% for category in site.categories %}
+                    {% if category[0] == "Data-Structure" %}
+                        <li><a href="/categories/data-structure" class="">Data Structure</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% for category in site.categories %}
+                    {% if category[0] == "Design-Pattern" %}
+                        <li><a href="/categories/design-pattern" class="">Design Pattern</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+  
+                {% for category in site.categories %}
+                    {% if category[0] == "Operating-System" %}
+                        <li><a href="/categories/operating-system" class="">Operating System</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+ 
+                {% for category in site.categories %}
+                    {% if category[0] == "Network" %}
+                        <li><a href="/categories/network" class="">Network</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul class="category-nav__item">
+
+            <!-- Problem Solving -->
+            <span class="category-nav__title">Problem Solving</span>
+            <ul class="category-nav__item">
+                {% for category in site.categories %}
+                    {% if category[0] == "Leetcode" %}
+                        <li><a href="/categories/leetcode" class="">Leetcode</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Etc -->
+            <span class="category-nav__title">ETC</span>
+            <ul class="category-nav__item">
+                {% for category in site.categories %}
+                    {% if category[0] == "Git/GitHub" %}
+                        <li><a href="/categories/git-github" class="">Git/Github</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+  
+                {% for category in site.categories %}
+                    {% if category[0] == "Jekyll-Blog" %}
+                        <li><a href="/categories/jekyll-blog" class="">Jekyll Blog</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+ 
+                {% for category in site.categories %}
+                    {% if category[0] == "Tool" %}
+                        <li><a href="/categories/tool" class="">Tool</a><span class="category-nav__count">({{category[1].size}})</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</div>

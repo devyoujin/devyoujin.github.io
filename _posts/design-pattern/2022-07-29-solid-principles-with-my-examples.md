@@ -1,7 +1,7 @@
 ---
 title: "SOLID 원칙, 직접 예제 만들어 이해하기"
 categories:
-  - Object-Oriented
+  - Design-Pattern
 tags:
   - OOD
 ---

@@ -7,6 +7,7 @@ $background-color: #fcfcfc !default;
 $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
 $primary-color: #917fb9 !default;
+$secondary-color: #271d2e !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: #271d2e !default;
 $link-color: #1B6EC0 !default;
@@ -14,8 +15,8 @@ $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 15%) !default;
 $masthead-link-color: #fff !default;
 $masthead-link-color-hover: mix(#000, $masthead-link-color, 25%) !default;
-$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
-$secondary-color: #EFDE83;
+$navicon-link-color-hover: mix(#fff, $secondary-color, 10%) !default;
+$underline-color: #EFDE83;
 
 /* syntax highlighting (base16) */
 $base00: #212121 !default;
@@ -62,5 +63,5 @@ $nanum-gothic-coding: 'Nanum Gothic Coding', monospace !default;
 
 /* custom */
 .masthead, .greedy-nav {
-   background-color: #271d2e !important;
+   background-color: $secondary-color !important;
 }

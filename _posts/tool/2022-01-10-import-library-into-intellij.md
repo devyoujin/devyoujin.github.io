@@ -1,7 +1,7 @@
 ---
 title: "[IntelliJ] 외부 라이브러리 import하기"
 categories:
-  - IntelliJ
+  - Tool
 tags:
   - IntelliJ
   - 🔨Tool

@@ -1,9 +1,10 @@
 ---
 title: "[Java Live Study] 4. 제어문(Control Statements)"
 categories:
-  - Java-Live-Study
+  - Java
 tags:
   - ☕Java
+  - Java-Live-Study
 ---
 
 > ⚓[백기선 강사님의 live study](https://github.com/whiteship/live-study)에 나온 주제들을 혼자 공부하고 정리하여 작성한 글입니다.⚓

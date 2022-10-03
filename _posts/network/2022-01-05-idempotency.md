@@ -1,7 +1,7 @@
 ---
 title: "[HTTP] 멱등성(indempotency)"
 categories:
-  - HTTP
+  - Network
 tags:
   - HTTP
   - 🕸Web

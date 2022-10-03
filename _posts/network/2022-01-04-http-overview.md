@@ -1,7 +1,7 @@
 ---
 title: "[HTTP] HTTP 개요"
 categories:
-  - HTTP
+  - Network
 tags:
   - HTTP
   - 🕸Web

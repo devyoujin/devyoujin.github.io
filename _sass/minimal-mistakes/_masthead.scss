@@ -50,6 +50,7 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
+  font-size: $type-size-6;
   // z-index: 20;
 }
 
@@ -90,5 +91,11 @@
   &--lg {
     padding-right: 2em;
     //font-weight: 700;
+  }
+}
+
+.is--toggleable {
+  @include breakpoint($large) {
+    display: none;
   }
 }

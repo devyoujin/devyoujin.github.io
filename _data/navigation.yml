@@ -1,9 +1,14 @@
 # main links
 main:
+  - title: "Contact"
+    url: /contact/
+    toggleable: true
   - title: "Category"
     url: /categories/
+    toggleable: true
   - title: "Tag"
     url: /tags/
+    toggleable: false
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"

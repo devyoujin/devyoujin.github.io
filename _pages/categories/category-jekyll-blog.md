@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Blog"
 layout: single
-permalink: /categories/jekyll
+permalink: /categories/jekyll-blog
 author_profile: true
 category_nav: true
 ---

@@ -4,16 +4,16 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-15T15:09:50+08:00</updated>
+  <updated>2023-10-15T15:36:37+08:00</updated>
   <author>
-    <name>Youjin Lee</name>
+    <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 Youjin Lee </rights>
+  <rights> © 2023 your_full_name </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -29,7 +29,7 @@
     <id>http://localhost:4000/posts/beerlot-retrospective-1/</id>
     <content src="http://localhost:4000/posts/beerlot-retrospective-1/" />
     <author>
-      <name>Youjin Lee</name>
+      <name>your_full_name</name>
     </author>
 
   
@@ -77,7 +77,7 @@ K1: 팀원들의 동일한 목표
     <id>http://localhost:4000/posts/solid-principles-with-my-examples/</id>
     <content src="http://localhost:4000/posts/solid-principles-with-my-examples/" />
     <author>
-      <name>Youjin Lee</name>
+      <name>your_full_name</name>
     </author>
 
   
@@ -120,7 +120,7 @@ SOLID 원...
     <id>http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/</id>
     <content src="http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/" />
     <author>
-      <name>Youjin Lee</name>
+      <name>your_full_name</name>
     </author>
 
   
@@ -171,7 +171,7 @@ ssh-keygen -t rsa -b 4096 -C "email_personal@example.com"
     <id>http://localhost:4000/posts/spring-history/</id>
     <content src="http://localhost:4000/posts/spring-history/" />
     <author>
-      <name>Youjin Lee</name>
+      <name>your_full_name</name>
     </author>
 
   
@@ -215,7 +215,7 @@ EJB는 Java EE(Enterprise Edition) 구현체 중 하나로 Spring이 탄생하�
     <id>http://localhost:4000/posts/linked-list/</id>
     <content src="http://localhost:4000/posts/linked-list/" />
     <author>
-      <name>Youjin Lee</name>
+      <name>your_full_name</name>
     </author>
 
   

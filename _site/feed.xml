@@ -4,16 +4,16 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-15T15:36:37+08:00</updated>
+  <updated>2023-10-15T09:48:09+02:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Youjin Lee</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 Youjin Lee </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -22,14 +22,14 @@
   <entry>
     <title>Beerlot 프로젝트 첫 번째 회고</title>
     <link href="http://localhost:4000/posts/beerlot-retrospective-1/" rel="alternate" type="text/html" title="Beerlot 프로젝트 첫 번째 회고" />
-    <published>2022-10-06T00:00:00+08:00</published>
+    <published>2022-10-06T00:00:00+02:00</published>
   
-    <updated>2022-10-06T07:08:04+08:00</updated>
+    <updated>2022-10-06T01:08:04+02:00</updated>
   
     <id>http://localhost:4000/posts/beerlot-retrospective-1/</id>
     <content src="http://localhost:4000/posts/beerlot-retrospective-1/" />
     <author>
-      <name>your_full_name</name>
+      <name>Youjin Lee</name>
     </author>
 
   
@@ -70,14 +70,14 @@ K1: 팀원들의 동일한 목표
   <entry>
     <title>SOLID 원칙, 직접 예제 만들어 이해하기</title>
     <link href="http://localhost:4000/posts/solid-principles-with-my-examples/" rel="alternate" type="text/html" title="SOLID 원칙, 직접 예제 만들어 이해하기" />
-    <published>2022-07-29T00:00:00+08:00</published>
+    <published>2022-07-29T00:00:00+02:00</published>
   
-    <updated>2022-07-29T00:00:00+08:00</updated>
+    <updated>2022-07-29T00:00:00+02:00</updated>
   
     <id>http://localhost:4000/posts/solid-principles-with-my-examples/</id>
     <content src="http://localhost:4000/posts/solid-principles-with-my-examples/" />
     <author>
-      <name>your_full_name</name>
+      <name>Youjin Lee</name>
     </author>
 
   
@@ -113,14 +113,14 @@ SOLID 원...
   <entry>
     <title>[GitHub] 여러 개의 GitHub 계정 SSH로 연결하기</title>
     <link href="http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/" rel="alternate" type="text/html" title="[GitHub] 여러 개의 GitHub 계정 SSH로 연결하기" />
-    <published>2022-07-22T00:00:00+08:00</published>
+    <published>2022-07-22T00:00:00+02:00</published>
   
-    <updated>2022-07-30T05:22:33+08:00</updated>
+    <updated>2022-07-29T23:22:33+02:00</updated>
   
     <id>http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/</id>
     <content src="http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/" />
     <author>
-      <name>your_full_name</name>
+      <name>Youjin Lee</name>
     </author>
 
   
@@ -164,14 +164,14 @@ ssh-keygen -t rsa -b 4096 -C "email_personal@example.com"
   <entry>
     <title>[Spring] Spring 탄생 배경</title>
     <link href="http://localhost:4000/posts/spring-history/" rel="alternate" type="text/html" title="[Spring] Spring 탄생 배경" />
-    <published>2022-06-24T00:00:00+08:00</published>
+    <published>2022-06-24T00:00:00+02:00</published>
   
-    <updated>2022-06-24T00:00:00+08:00</updated>
+    <updated>2022-06-24T00:00:00+02:00</updated>
   
     <id>http://localhost:4000/posts/spring-history/</id>
     <content src="http://localhost:4000/posts/spring-history/" />
     <author>
-      <name>your_full_name</name>
+      <name>Youjin Lee</name>
     </author>
 
   
@@ -208,14 +208,14 @@ EJB는 Java EE(Enterprise Edition) 구현체 중 하나로 Spring이 탄생하�
   <entry>
     <title>[Data Structure] Linked List(연결 리스트)</title>
     <link href="http://localhost:4000/posts/linked-list/" rel="alternate" type="text/html" title="[Data Structure] Linked List(연결 리스트)" />
-    <published>2022-02-28T00:00:00+08:00</published>
+    <published>2022-02-28T00:00:00+01:00</published>
   
-    <updated>2022-02-28T00:00:00+08:00</updated>
+    <updated>2022-02-28T00:00:00+01:00</updated>
   
     <id>http://localhost:4000/posts/linked-list/</id>
     <content src="http://localhost:4000/posts/linked-list/" />
     <author>
-      <name>your_full_name</name>
+      <name>Youjin Lee</name>
     </author>
 
   

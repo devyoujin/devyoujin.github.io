@@ -1,0 +1,272 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Chirpy</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2023-10-15T15:09:50+08:00</updated>
+  <author>
+    <name>Youjin Lee</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Youjin Lee </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Beerlot 프로젝트 첫 번째 회고</title>
+    <link href="http://localhost:4000/posts/beerlot-retrospective-1/" rel="alternate" type="text/html" title="Beerlot 프로젝트 첫 번째 회고" />
+    <published>2022-10-06T00:00:00+08:00</published>
+  
+    <updated>2022-10-06T07:08:04+08:00</updated>
+  
+    <id>http://localhost:4000/posts/beerlot-retrospective-1/</id>
+    <content src="http://localhost:4000/posts/beerlot-retrospective-1/" />
+    <author>
+      <name>Youjin Lee</name>
+    </author>
+
+  
+    
+    <category term="Toy-Project" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  Beerlot v0.5.0-alpha release를 기념하며 작성하는 회고
+
+
+개요
+올해 8월부터 새로운 토이 프로젝트를 시작했다. 서비스명은 Beerlot(비어랏)으로, 이름에서 알 수 있듯이 맥주를 테마로 하는 일종의 커뮤니티 서비스이다. ‘맥주가 많다(Beer가 lot하다)’와 ‘맥주(잔)을 비어랏!’의 두 가지 의미를 가지고 있다. 나의 취향을 아주 제대로 저격한 프로젝트라고 말할 수 있겠다.🤩
+
+🔽 내가 2년 동안 독일에서 마셔본 맥주 병뚜껑 모음
+
+
+프론트엔드 개발자님이 제안해주신 Agile 회고 방식 중 하나인 KPT 회고를 따라 작성해보려고 한다.
+
+K(Keep)
+K1: 팀원들의 동일한 목표
+팀 단위의 토이 프로젝트에서 가장 중요한 것은 각자 프로젝트에 대해 가지고 있는 목표&amp;am...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SOLID 원칙, 직접 예제 만들어 이해하기</title>
+    <link href="http://localhost:4000/posts/solid-principles-with-my-examples/" rel="alternate" type="text/html" title="SOLID 원칙, 직접 예제 만들어 이해하기" />
+    <published>2022-07-29T00:00:00+08:00</published>
+  
+    <updated>2022-07-29T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/solid-principles-with-my-examples/</id>
+    <content src="http://localhost:4000/posts/solid-principles-with-my-examples/" />
+    <author>
+      <name>Youjin Lee</name>
+    </author>
+
+  
+    
+    <category term="Design-Pattern" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  온라인 숍이라는 익숙한 도메인으로 SOLID 원칙의 예제를 만들어 보았다. 각각의 원칙을 전제 조건, 원칙을 위배하는 설계, 원칙을 만족하는 설계로 나누어 설명해보았다.
+
+
+답답해서 직접 만든 예제🤓 혹시 틀린 부분, 개선할 부분이 있다면 댓글 남겨 주시면 감사하겠습니다. (‘-‘)(,_,)
+
+개요
+Clean Code의 저자로 잘 알려진 Robert C. Martin이 2000년도 그의 논문 “Design Principles and Design Patterns”에 소개한 개념이다. 후에 Michael Feathers가 각 원칙의 첫 글자를 따서 SOLID라는 명칭을 만들었는데, Robert C. Martin도 이름이 있으니 대단한 원칙처럼 느껴진다며 SOLID라고 부르기 시작했다.
+
+SOLID 원...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[GitHub] 여러 개의 GitHub 계정 SSH로 연결하기</title>
+    <link href="http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/" rel="alternate" type="text/html" title="[GitHub] 여러 개의 GitHub 계정 SSH로 연결하기" />
+    <published>2022-07-22T00:00:00+08:00</published>
+  
+    <updated>2022-07-30T05:22:33+08:00</updated>
+  
+    <id>http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/</id>
+    <content src="http://localhost:4000/posts/manage-multiple-github-accounts-with-ssh/" />
+    <author>
+      <name>Youjin Lee</name>
+    </author>
+
+  
+    
+    <category term="Git/GitHub" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  how to manage multiple GitHub accounts with SSH
+
+
+[1] SSH 키를 생성
+각 GitHub 계정에 대해 SSH 키를 생성한다.
+
+ssh-keygen -t rsa -b 4096 -C "email_organization@example.com"
+ssh-keygen -t rsa -b 4096 -C "email_personal@example.com"
+
+
+  -t(type): 키 알고리즘 명시
+  -b(bits): 키 사이즈 명시
+  -C(comment): public key 뒤에 붙음.
+
+
+두 개의 SSH 키를 구분짓기 위해 키 이름을 물을 때 고유한 키 이름을 입력한다. 회사용은 org_id_rsa, 개인용은 per_id_rsa로 생성했다고 가정하겠다.
+&amp;gt; E...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Spring] Spring 탄생 배경</title>
+    <link href="http://localhost:4000/posts/spring-history/" rel="alternate" type="text/html" title="[Spring] Spring 탄생 배경" />
+    <published>2022-06-24T00:00:00+08:00</published>
+  
+    <updated>2022-06-24T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/spring-history/</id>
+    <content src="http://localhost:4000/posts/spring-history/" />
+    <author>
+      <name>Youjin Lee</name>
+    </author>
+
+  
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  #EJB #POJO #Spring
+
+
+Spring 탄생 배경
+
+  🧸 요약: Spring이 탄생하기 이전에는 EJB(Enterprise Java Bean)가 Java 진영의 대표기술이었다. 하지만 EJB는 여러 문제점을 가지고 있었다. 한 개발자가 EJB의 문제점을 지적하며 대체 방안을 소스코드로 작성하여 책을 출간하였다. 이 책을 본 다른 개발자들 몇몇이 모여 오픈소스화하며 Spring이 탄생하게 되었다.
+
+
+EJB(Enterprise Java Bean)
+EJB는 Java EE(Enterprise Edition) 구현체 중 하나로 Spring이 탄생하기 이전까지 Java 진영의 대표기술이었다. ‘비지니스 객체를 관리하는 컨테이너를 만들어서 필요할 때마다 컨테이너로부터 객체를 받아서 사용하자‘라는...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Data Structure] Linked List(연결 리스트)</title>
+    <link href="http://localhost:4000/posts/linked-list/" rel="alternate" type="text/html" title="[Data Structure] Linked List(연결 리스트)" />
+    <published>2022-02-28T00:00:00+08:00</published>
+  
+    <updated>2022-02-28T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/linked-list/</id>
+    <content src="http://localhost:4000/posts/linked-list/" />
+    <author>
+      <name>Youjin Lee</name>
+    </author>
+
+  
+    
+    <category term="Data-Structure" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  연결 리스트(Linked List) 1️⃣0️⃣1️⃣
+
+
+ 구현코드 ✅ 테스트코드
+
+[1] Linked List 구조
+
+
+
+  node: 연결 리스트의 각 아이템
+    
+      data field: 값을 저장
+      link field: 다음 노드를 가리키는 포인터
+    
+  
+  head: 연결 리스트의 첫 노드
+  tail: 연결 리스트의 마지막 노드를 종종 tail라 칭하기도 하는데, 공식적으로 갖춰야하는 포인터는 아닌 것 같아 그림에는 생략하였다.
+
+
+[2] Linked List 종류
+
+
+
+  단일 연결 리스트(Singly Linked List)
+    
+      일반적으로 종류를 논하는 것이 아니면 연결 리스트는 단일 연결 리스트를 일컫는다.
+    
+  
+  이중 연결 리스...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

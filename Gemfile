@@ -25,3 +25,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jemoji"
+gem "jekyll-theme-chirpy"

@@ -1,9 +1,12 @@
 ---
-title: "[Algorithm] 플로이드 순환 검출 알고리즘(Floyd's Cycle Detection Algorithm)"
-categories:
-  - Algorithm
+title: "플로이드 순환 검출 알고리즘(Floyd's Cycle Detection Algorithm)"
+parent_category:
+    - Computer-Science
+categories: 
+    - Computer-Science
+    - Algorithm
 tags:
-  - 💡Algorithm
+    - algorithm
 ---
 
 > a.k.a 토끼와 거북이 알고리즘(Tortoise🐢 & Hare🐇 Algorithm) / Slow & Fast Algorithm
@@ -44,11 +47,11 @@ tags:
 순환 구간이 존재하면 이동 거리와 위치가 비례하지 않아서 사실 제대로 증명하기가 좀 복잡한 것 같다. 명제1은 직관으로 이해할 수 있었지만 명제2는 따로 정리하기 전까지 받아들이기 힘들었다.
 
 ## 명제1
-**<u>거북이와 토끼가 만났으면 순환하는 구간이 존재한다.</u>**  
+**거북이와 토끼가 만났으면 순환하는 구간이 존재한다.**  
 속력이 다른 두 사람이 달리기를 한다고 생각해본다. 이 때 속력은 빨라졌다 느렸졌다 하지 않고 일정하다고 가정한다. 직선트랙이라면 두 사람의 거리는 점점 멀어져 만날 수 없게 되겠지만 원형트랙이라면 둘은 만나게 될 것이다.
 
 ## 명제2
-**<u>출발 지점에서부터 순환 구간이 시작하는 지점까지의 거리는 거북이와 토끼가 만난 지점에서부터 순환 구간이 시작하는 지점까지의 거리와 같다.(= 거북이와 토끼가 다시 만나는 지점은 순환 구간의 시작 지점이다.)</u>**  
+**출발 지점에서부터 순환 구간이 시작하는 지점까지의 거리는 거북이와 토끼가 만난 지점에서부터 순환 구간이 시작하는 지점까지의 거리와 같다.(= 거북이와 토끼가 다시 만나는 지점은 순환 구간의 시작 지점이다.)**  
 
 명제를 말로 풀어 설명하면 복잡해 보이지만 아래 사진에서 빨간 구간과 초록 구간의 길이가 같다는 것을 증명하면 된다.
 
@@ -71,32 +74,43 @@ tags:
 
 # [4] 구현
 
-🔽 순환 구간의 시작 지점을 구하는 Java 코드([Leetcode 142번 Linked List Cycle2](https://leetcode.com/problems/linked-list-cycle-ii/))
-```java
-public ListNode detectCycle(ListNode head) {
-    if (head == null) return null;
-        
-    ListNode slow = head; // 거북이
-    ListNode fast = head; // 토끼
+🔽 순환 구간의 시작 지점을 구하는 Go 코드([Leetcode 142번 Linked List Cycle2](https://leetcode.com/problems/linked-list-cycle-ii/))
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func detectCycle(head *ListNode) *ListNode {
+    if head == nil {
+        return nil
+    }
+    slow, fast := head, head // 거북이와 토끼
 
-    // 순환구간이 존재하는지 판단
-    boolean hasCycle = false;
-    while (fast.next != null && fast.next.next != null) {
-        slow = slow.next;
-        fast = fast.next.next;
-        if (slow == fast) { // 거북이와 토끼가 만났다면
-            hasCycle = true; // 순환구간은 존재
-            break;
+    // 순환 구간이 존재하는지 판단
+    var hasCycle = false
+    for fast.Next != nil && fast.Next.Next != nil {
+        slow = slow.Next // 거북이는 한 칸씩 이동
+        fast = fast.Next.Next // 토끼는 두 칸씩 이동
+        if slow == fast { // 거북이와 토끼가 만났다면
+            hasCycle = true // 순환 구간이 존재
+            break
         }
     }
-    if (hasCycle) { // 순환구간이 존재한다면
-        slow = head; // 거북이를 출발 지점으로 이동
-        while (slow != fast) { // 거북이와 토끼가 만날때까지 한칸씩 이동
-            slow = slow.next;
-            fast = fast.next;
-        }
-        return slow;
+    
+    // 순환 구간이 존재하지 않으면 nil 반환
+    if !hasCycle {
+        return nil
     }
-    return null;
+
+    // 순환 구간이 존재한다면
+    slow = head // 거북이를 출발 지점으로 이동
+    for slow != fast { // 거북이와 토끼가 만날 때까지 한 칸씩 이동
+        slow = slow.Next
+        fast = fast.Next
+    }
+    return slow
 }
 ```

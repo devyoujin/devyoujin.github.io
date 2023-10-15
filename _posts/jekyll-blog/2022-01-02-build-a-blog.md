@@ -1,11 +1,12 @@
 ---
 title: "[Jekyll Blog] 블로그 시작하기"
 categories:
+  - Tools
   - Jekyll-Blog
 tags:
-  - 🧪Jekyll
-  - 💜Blog
-  - Github-Pages
+  - jekyll
+  - blog
+  - github_pages
 ---
 
 > 💎Jekyll + Github Pages로 개발 블로그 만들기 / Minimal-Mistakes 테마 커스터마이징하기💎
@@ -19,7 +20,7 @@ Jekyll를 사용하려면 아래의 세 가지가 먼저 필요하다.
   2. RubyGems
   3. GCC와 Make
 
-1. [Ruby Installer](https://rubyinstaller.org/downloads/)에서 <u>2.5.0 버전 이상</u>의 **Ruby+Devkit**을 다운받는다. (**Ruby+Devkit**으로 설치하면 위에 언급한 세 가지를 한 큐에 다운받을 수 있다.)
+1. [Ruby Installer](https://rubyinstaller.org/downloads/)에서 2.5.0 버전 이상의 **Ruby+Devkit**을 다운받는다. (**Ruby+Devkit**으로 설치하면 위에 언급한 세 가지를 한 큐에 다운받을 수 있다.)
 2. Ruby 설치가 완료되면 자동으로 터미널이 열리면서 MSYS2 설치 옵션을 묻는데, 엔터키를 눌러 기본값으로 진행한다.
   - 터미널을 그냥 종료해버린 경우 터미널에 `ridk install` 명령어를 입력하여 설치를 진행할 수 있다.
 3. 터미널에 명령어를 입력하여 각각이 잘 설치되었는지 확인한다.
@@ -36,7 +37,7 @@ gem install jekyll bundler
 
 # [3] Sample Blog로 테스트하기
 
-> Jekyll계의 **<u>Hello, World!</u>**라 해두겠다. 테스트용으로 블로그를 생성하고 로컬에서 실행시켜 <u>개발환경이 잘 구축되었는지 </u> 확인한다. 
+> Jekyll계의 **Hello, World!**라 해두겠다. 테스트용으로 블로그를 생성하고 로컬에서 실행시켜 개발환경이 잘 구축되었는지 확인한다. 
 
 ```terminal
 jekyll new helloBlog        # 사이트 생성
@@ -46,8 +47,9 @@ bundle exec jekyll serve    # 사이트 빌드
 
 웹 브라우저에서 `localhost:4000`으로 접속한다.
 
-🛑 **Trouble Shooting** 🛑 <br> 3.0.0 버전 이상의 Ruby를 설치했다면 빌드 과정에서 `webrick` 관련 에러가 발생할 수 있다. 터미널에 `bundle add webrick`를 입력해 의존성을 추가해주면 된다.
-{: .notice--danger}
+> **Trouble Shooting**  
+3.0.0 버전 이상의 Ruby를 설치했다면 빌드 과정에서 `webrick` 관련 에러가 발생할 수 있다. 터미널에 `bundle add webrick`를 입력해 의존성을 추가해주면 된다.
+{: .prompt-danger}
 
 # [5] Jekyll Theme로 시작하기
 > 지킬 테마를 입혀 기본 프로젝트 골격을 갖추고 로컬에서 실행해본다. 
@@ -65,8 +67,10 @@ bundle exec jekyll serve
 ```
 6. 웹 브라우저에서 `localhost:4000`으로 접속한다.
 
-🛑 **Trouble Shooting** 🛑 <br> 빌드 중에 `kramdown-parser-gfm` 관련 에러가 발생한다면, `Gemfile`에 `gem kramdown-parser-gfm`를 추가하고 `bundle install` 후 다시 빌드해본다. <br>  _*참고_: `kramdown-parser-gfm`는 gfm(Github Favored Markdown)의 마크다운 파일을 HTML로 변환해주는 역할을 한다.
-{: .notice--danger}
+> **Trouble Shooting**  
+빌드 중에 `kramdown-parser-gfm` 관련 에러가 발생한다면, `Gemfile`에 `gem kramdown-parser-gfm`를 추가하고 `bundle install` 후 다시 빌드해본다.  
+_*참고_: `kramdown-parser-gfm`는 gfm(Github Favored Markdown)의 마크다운 파일을 HTML로 변환해주는 역할을 한다.
+{: .prompt-danger}
 
 ## minimal-mistakes로 시작하기
 > 나는 이용자도 많고 문서화가 잘 되어 있는 [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/collection-archive/) 테마로 시작하였다. 군더더기 없는 문서이지만 시작하는 단계에서 💡소소한 팁...(?)💡을 언급하고자 한다.
@@ -133,17 +137,17 @@ git push origin master
 
 # [7] 관련 개념 정리
 ## Jekyll
-- **Jekyll**은 Ruby로 작성된 <u>정적 사이트 생성기</u>이다. 
+- **Jekyll**은 Ruby로 작성된 정적 사이트 생성기이다. 
 
 ## Gem
-- **Gem**은 Ruby 생태계에서 하나의 <u>기능을 담당하는 모듈</u>을 의미한다.
+- **Gem**은 Ruby 생태계에서 하나의 기능을 담당하는 모듈을 의미한다.
 - Jekyll도 Gem이고, Jekyll Plugin으로 사용되는 라이브러리도 모두 Gem이다.
 
 ## Gemfile
-- **Gemfile**은 <u>Gem들을 나열한 파일</u>이다.
+- **Gemfile**은 Gem들을 나열한 파일이다.
 
 ## Bundle
-- **Bundler** 역시 하나의 Gem인데, <u>Gemfile에 나열되어 있는 모든 Gem들을 설치</u>하는 역할을 한다.
+- **Bundler** 역시 하나의 Gem인데, Gemfile에 나열되어 있는 모든 Gem들을 설치하는 역할을 한다.
 
 ## Jekyll Cheat Sheet
 **Gemfile에 새로운 Gem이 추가되었을 때**

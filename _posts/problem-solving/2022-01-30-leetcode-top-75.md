@@ -1,15 +1,16 @@
 ---
 title: "[Leetcode] Leetcode 추천 75문제 정리"
 categories:
+  - Problem-Solving
   - Leetcode
 tags:
-  - Leetcode
-  - 🔥Problem-Solving
+  - leetcode
+  - java
 ---
 
 > 해외 어느 구직 커뮤니티에 올라온 ['새해 선물 - 당신의 시간을 아껴줄 Leetcode Top 75문제 선별해봄.'](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)글에 나열된 75문제의 **문제 번호**와 **난이도**를 찾아서 정리해보았다. 부지런히 풀어야지🤓
 
-<a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
+<a href="https://github.com/dev-ujin/java-problem-solving" class="btn-custom btn-gray"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
 
 - Difficulty: 🟢(Easy), 🟡(Medium), 🔴(Hard)
 

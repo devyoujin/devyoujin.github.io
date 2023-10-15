@@ -44,8 +44,12 @@
 }
 
 %tag-hover {
-  background: var(--tag-hover);
+  color: var(--main-bg) !important;
+  background: var(--point-color-main);
   transition: background 0.35s ease-in-out;
+  .text-muted {
+    color: var(--main-bg) !important;
+  }
 }
 
 %table-cell {
@@ -55,8 +59,9 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: var(--point-color-main); /* #d2603a !important;*/
+  opacity: 0.7;
+  border-bottom: 1px solid var(--point-color-main); /*#d2603a;*/
   text-decoration: none;
 }
 

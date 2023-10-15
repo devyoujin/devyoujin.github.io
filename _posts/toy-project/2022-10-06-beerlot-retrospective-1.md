@@ -1,10 +1,11 @@
 ---
 title: "Beerlot 프로젝트 첫 번째 회고"
 categories:
+  - My-Dev-Story
   - Toy-Project
 tags:
-  - Retrospective
-  - Beerlot
+  - retrospective
+  - beerlot
 ---
 
 > Beerlot v0.5.0-alpha release를 기념하며 작성하는 회고

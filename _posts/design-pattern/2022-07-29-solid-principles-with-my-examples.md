@@ -1,15 +1,17 @@
 ---
 title: "SOLID 원칙, 직접 예제 만들어 이해하기"
 categories:
+  - Computer-Science
   - Design-Pattern
 tags:
-  - OOD
+  - solid
+  - ood
 ---
 
 > 온라인 숍이라는 익숙한 도메인으로 SOLID 원칙의 예제를 만들어 보았다. 각각의 원칙을 전제 조건, 원칙을 위배하는 설계, 원칙을 만족하는 설계로 나누어 설명해보았다.
 
-답답해서 직접 만든 예제🤓 혹시 틀린 부분, 개선할 부분이 있다면 댓글 남겨 주시면 감사하겠습니다. ('-')(,_,)
-{:.notice--primary}
+> 답답해서 직접 만든 예제🤓 혹시 틀린 부분, 개선할 부분이 있다면 댓글 남겨 주시면 감사하겠습니다. ('-')(,_,)
+{: .prompt-warning}
 
 # 개요
 Clean Code의 저자로 잘 알려진 Robert C. Martin이 2000년도 그의 논문 "Design Principles and Design Patterns"에 소개한 개념이다. 후에 Michael Feathers가 각 원칙의 첫 글자를 따서 `SOLID`라는 명칭을 만들었는데, Robert C. Martin도 이름이 있으니 대단한 원칙처럼 느껴진다며 `SOLID`라고 부르기 시작했다.
@@ -25,9 +27,9 @@ SOLID 원칙은 OOD(Object Oriented Design)를 위한 개념이다. 이 원칙�
 참고로 "Design Principles and Design Patterns"에서는 무슨 영문인지 단일 책임 원칙에 대한 내용을 찾을 수 없었다. 하지만 Robert C. Martin의 한 [강연](https://www.youtube.com/watch?v=TMuno5RZNeE)을 보면 그가 단일 책임 원칙에 대해 설명하는 것을 볼 수 있다.
 
 # Single Responsibility Principle(SRP, 단일 책임 원칙)
-*A class should have one and only one reason to change.*   
+> *A class should have one and only one reason to change.*   
 클래스는 변경되어야 할 단 하나의 이유만을 가져야 한다.
-{:.notice--primary}
+{: .prompt-info}
 
 ## 전제 상황
 ```
@@ -64,9 +66,9 @@ SOLID 원칙은 OOD(Object Oriented Design)를 위한 개념이다. 이 원칙�
 
 # Open Closed Principle(OCP, 개방 폐쇄 원칙)
 
-*A module should be open for extension but closed for modification.*  
+> *A module should be open for extension but closed for modification.*  
 모듈은 확장에는 열려 있고, 변경에는 닫혀있어야 한다.
-{:.notice--primary}
+{: .prompt-info}
 
 OOD의 모든 원칙들을 통틀어 가장 중요한 원칙이다. **모듈의 소스코드를 변경하지 않으면서 모듈이 하는 일을 변경할 수 있어야 한다.** 모순 같아 보이지만 **추상화(abstraction)**를 이용하면 실현 가능하다.
 
@@ -205,9 +207,9 @@ public class ContinentalOrder implements Order {
 
 # Liskov Substitution Principle(LSP, 리스코프 치환 원칙)
 
-*Subclasses should be substitutable for their base classes.*   
+> *Subclasses should be substitutable for their base classes.*   
 하위 클래스는 상위 클래스를 대체할 수 있어야 한다.
-{:.notice--primary}
+{: .prompt-info}
 
 ```
 |------|        |-------|
@@ -318,9 +320,9 @@ void f(Ellipse& e)
 
 # Interface Segragation Principle(ISP, 인터페이스 분리 원칙)
 
-*Many client specific interfaces are better than one general purpose interface.*   
+> *Many client specific interfaces are better than one general purpose interface.*   
 특정 클라이언트만을 위한 인터페이스 여러 개가 하나의 범용 인터페이스보다 낫다.
-{:.notice--primary}
+{: .prompt-info}
 
 
 ## 전제 상황
@@ -373,9 +375,9 @@ Order 인터페이스에 schedule() 메서드를 추가해 요구 사항을 반�
 
 # Dependency Inversion Principle(DIP, 의존관계 역전 원칙)
 
-*Depend upon Abstractions. Do not depend upon concretions.*   
+> *Depend upon Abstractions. Do not depend upon concretions.*   
 구체화가 아닌 추상화에 의존해야한다.
-{:.notice--primary}
+{: .prompt-info}
 
 개방 폐쇄 원칙이 OO 아키텍처의 목표를 나타낸다면, 의존관계 역전 원칙은 주요 원리를 나타낸다. 의존관계 역전 원칙은 구체적인 함수나 클래스에 의존하기보다는 인터페이스나 추상적 함수, 추상적 클래스에 의존해야한다는 것이다.
 

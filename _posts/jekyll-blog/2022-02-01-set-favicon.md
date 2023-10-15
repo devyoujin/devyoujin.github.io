@@ -1,11 +1,12 @@
 ---
 title: "[Jekyll Blog] favicon 생성 및 설정"
 categories:
+  - Tools
   - Jekyll-Blog
 tags:
-  - 🧪Jekyll
-  - 💜Blog
-  - Github-Pages
+  - jekyll
+  - blog
+  - github_pages
 ---
 
 > 💎Jekyll + Github Pages로 개발 블로그 만들기 / Minimal-Mistakes 테마 커스터마이징하기💎

@@ -1,9 +1,10 @@
 ---
-title: "[Linux] 소유자, 소유그룹 변경하기(chown)"
+title: "Linux 소유자, 소유그룹 변경하기(chown)"
 categories:
+  - Computer-Science
   - Operating-System
 tags:
-  - 🐧Linux
+  - linux
 ---
 
 > 

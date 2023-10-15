@@ -1,11 +1,12 @@
 ---
 title: "[Jekyll Blog] 네비게이션 메뉴 추가하기 (카테고리와 태그 메뉴 만들기)"
 categories:
+  - Tools
   - Jekyll-Blog
 tags:
-  - 🧪Jekyll
-  - 💜Blog
-  - Github-Pages
+  - jekyll
+  - blog
+  - github_pages
 ---
 
 > 💎Jekyll + Github Pages로 개발 블로그 만들기 / Minimal-Mistakes 테마 커스터마이징하기💎
@@ -55,5 +56,5 @@ author_profile: true
 
 - `title`: 블로그에서 `Category` 메뉴를 눌렀을 때 화면에 보여진다.
 - `layout`: minimal-mistakes 같은 경우에는 이미 `_layouts`에 구현이 다 되어있기 때문에 layout으로 지정만 해주면 된다.
-- `permalink`: <u>[[1]](#1-menu-등록)에서 `url`에 적은 값과 같은 값을 넣어줘야한다.</u>
+- `permalink`: [[1]](#1-menu-등록)에서 `url`에 적은 값과 같은 값을 넣어줘야한다.
 - `author_profile`: Category나 Tag 페이지에서도 좌측 프로필이 보여지게 할 것인지에 대한 여부이다.

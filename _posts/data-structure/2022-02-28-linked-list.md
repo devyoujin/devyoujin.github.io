@@ -1,16 +1,16 @@
 ---
-title: "[Data Structure] Linked List(연결 리스트)"
+title: "연결 리스트(Linked List)"
 categories:
+  - Computer-Science
   - Data-Structure
 tags:
-  - 💼Data-Structure
-  - ☕Java
+  - data_structure
+  - java
 ---
 
 > 연결 리스트(Linked List) 1️⃣0️⃣1️⃣
 
-<a href="https://github.com/dev-ujin/java-lab/tree/main/linked-list/src/main" class="btn btn--github"><i class="fab fa-github"></i> 구현코드</a> <a href="https://github.com/dev-ujin/java-lab/tree/main/linked-list/src/test" class="btn btn--success">✅ 테스트코드</a>
-
+<a href="https://github.com/dev-ujin/java-lab/tree/main/linked-list/src/main" class="btn-custom btn-gray"><i class="fab fa-github"></i> 구현코드</a> <a href="https://github.com/dev-ujin/java-lab/tree/main/linked-list/src/test" class="btn-custom btn-green">✅ 테스트코드</a>
 
 # [1] Linked List 구조
 ![Linked List]({{site.url}}{{site.baseurl}}/assets/img/data-structure/linked-list.jpg)
@@ -41,21 +41,21 @@ tags:
 
 ## 장점
 
-###### 동적 크기를 가진다
+동적 크기를 가진다
 - 배열은 크기가 고정되어 있지만, 연결리스트는 그렇지 않다.
 
-###### 삽입 및 삭제가 쉽다
+삽입 및 삭제가 쉽다
 - 새로운 원소를 중간에 추가하거나 중간에 위치한 원소를 삭제하려면 뒤에 위치하는 원소들의 위치를 한칸씩 옮겨줘야하는 배열에 비해 연결리스트는 비교적 삽입, 삭제가 쉽다.(자세한 방법은 아래에서 설명한다.)
 
 ## 단점
 
-###### 임의 접근이 불가능하다
+임의 접근이 불가능하다
 - 배열은 인덱스를 통해 임의 접근(Random Access)이 가능하지만, 연결 리스트는 `head` 노드에서부터 시작하여 원하는 원소에 접근해야한다.
 
-###### 포인터를 위한 메모리가 필요하다
+포인터를 위한 메모리가 필요하다
 - 연결 리스트에서는 다음 노드를 가리키는 포인터를 위해 추가적인 메모리 공간이 필요하다.
 
-###### 캐싱에 적합하지 않다
+캐싱에 적합하지 않다
 - 배열은 연속적인 공간을 할당하기 때문에 원소들이 인접해 있어 공간적 지역성(Space Locality)을 통해 캐싱을 할 수 있지만, 연결 리스트는 메모리에 분포되어 있기 때문에 캐싱에 적합하지 않다.
 
 # [4] Linked List 메서드

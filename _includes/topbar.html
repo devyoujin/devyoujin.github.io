@@ -13,7 +13,7 @@
         <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
 
       {% else %}
-        {% for item in paths %}
+        {% for path in paths %}
           {% if forloop.first %}
             <span>
               <a href="{{ '/' | relative_url }}">
@@ -23,17 +23,22 @@
 
           {% elsif forloop.last %}
             {% if page.collection == 'tabs' %}
-              <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+              <span>{{ site.data.locales[include.lang].tabs[path] | default: page.title }}</span>
             {% else %}
-              <span>{{ page.title }}</span>
+              <span>{{ page.title | replace: '-', ' ' }}</span>
             {% endif %}
-
-          {% elsif page.layout == 'category' or page.layout == 'tag' %}
-            <span>
-              <a href="{{ item | relative_url }}">
-                {{ site.data.locales[include.lang].tabs[item] | default: page.title }}
-              </a>
-            </span>
+          {% else %}
+            {% assign words = path | split: '-' %}
+            {% capture titlecase %}
+              {% for word in words %}
+                {{ word | capitalize }}
+              {% endfor %}
+            {% endcapture %}
+            {% if page.layout == "post" %}
+            <span><a href="/categories/{{path | relative_url }}">{{ titlecase }}</a></span>
+            {% else %}
+            <span><a href="{{ path | relative_url }}">{{ titlecase }}</a></span>
+            {% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}

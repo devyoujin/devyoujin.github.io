@@ -1,11 +1,12 @@
 ---
 title: "[Jekyll Blog] 댓글&좋아요 기능 추가하기(feat. Giscus)"
 categories:
+  - Tools
   - Jekyll-Blog
 tags:
-  - 🧪Jekyll
-  - 💜Blog
-  - Github-Pages
+  - jekyll
+  - blog
+  - github_pages
 ---
 
 > 💎Jekyll + Github Pages로 개발 블로그 만들기 / Minimal-Mistakes 테마 커스터마이징하기💎

@@ -1,17 +1,18 @@
 ---
 title: "[Java Live Study] 3. 연산자(Operator)"
 categories:
+  - Language&Framework
   - Java
 tags:
-  - ☕Java
-  - Java-Live-Study
+  - java
+  - java_live_study
 ---
 
 > ⚓[백기선 강사님의 live study](https://github.com/whiteship/live-study)에 나온 주제들을 혼자 공부하고 정리하여 작성한 글입니다.⚓
 
 📌 **3주차 목표**: Java의 다양한 연산자 학습하기
 
-<a href="https://github.com/dev-ujin/java-lab/tree/main/java-live-study/operator" class="btn btn--github"><i class="fab fa-github"></i> 소스코드</a>
+<a href="https://github.com/dev-ujin/java-lab/tree/main/java-live-study/operator" class="btn btn-secondary"><i class="fab fa-github"></i> 소스코드</a>
 
 # [0] 용어
 - 연산자: 특정한 연산을 수행하고 결과를 반환하는 기호이다.
@@ -149,11 +150,11 @@ public class RelationalOperator {
 |`&&`|AND|
 |`||`|OR|
 
-🚧 비트 연산자의 **AND(`&`)** 혹은 **OR(`|`)**와 혼동하지 않도록 주의해야한다.
-{: .notice--warning}
+> 비트 연산자의 **AND(`&`)** 혹은 **OR(`|`)**와 혼동하지 않도록 주의해야한다.
+{: .prompt-warning}
 
 # [5] instanceof
-- 타입 비교 연산자(Type Comparison Operator)로 <u>객체가 특정 타입인지 확인</u>할 수 있다..
+- 타입 비교 연산자(Type Comparison Operator)로 객체가 특정 타입인지 확인할 수 있다..
 - `true` 혹은 `false`를 반환한다.
 
 ```java
@@ -177,7 +178,7 @@ public class TypeComparisonOperator {
 ```
 
 # [6] 대입 연산자(Assignment Operator)
-- 대입 연산자 `=`는 <u>피연산자에 값을 대입</u>할 때 사용한다.
+- 대입 연산자 `=`는 피연산자에 값을 대입할 때 사용한다.
 - 다른 연산자와 결합하여 사용할 수도 있다.
 
 ```java

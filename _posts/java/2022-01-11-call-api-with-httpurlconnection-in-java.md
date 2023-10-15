@@ -1,16 +1,17 @@
 ---
 title: "[Java] HttpURLConnection으로 외부 API 호출하기(GET, POST 요청)"
 categories:
+  - Language&Framework
   - Java
 tags:
-  - ☕Java
-  - 🕸Web
-  - API
+  - java
+  - web
+  - api
 ---
 
 > Java 라이브러리 `HttpURLConnection`을 이용하여 외부 API를 호출하고 테스트 서버를 통해 테스트해본다.
 
-<a href="https://github.com/dev-ujin/java-lab/tree/main/api-call" class="btn btn--github"><i class="fab fa-github"></i> 소스코드</a>
+<a href="https://github.com/dev-ujin/java-lab/tree/main/api-call" class="btn-custom btn-gray"><i class="fab fa-github"></i> 소스코드</a>
 
 # [0] 선수 작업
 - JSON으로 데이터를 처리할 것이기 때문에 **json- simple 라이브러리를 import**하는 작업이 필요하다.

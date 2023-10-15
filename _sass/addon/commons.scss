@@ -43,10 +43,10 @@ body {
   h#{$i} {
     @extend %heading;
 
-    @if $i > 1 {
+    //@if $i > 0 {
       @extend %section;
       @extend %anchor;
-    }
+    //}
 
     @if $i < 5 {
       $factor: 0.18rem;
@@ -613,8 +613,43 @@ main {
 /* Overwrite bootstrap outline button */
 .btn.btn-outline-primary {
   &:not(.disabled):hover {
-    border-color: #007bff !important;
+    color: var(--main-bg) !important;
+    border-color: var(--point-color-main) !important;
+    background-color: var(--point-color-main) !important;
+    opacity: 0.7;
   }
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none !important;
+  opacity: 1;
+  font-weight: bold;
+  &:not(.disabled):hover {
+    opacity: 0.6 !important;
+  }
+}
+.btn-green {
+  color: var(--prompt-tip-icon-color) !important;
+  background-color: var(--prompt-tip-bg) !important;
+}
+.btn-blue {
+  color: var(--prompt-info-icon-color) !important;
+  background-color: var(--prompt-info-bg) !important;
+}
+.btn-yellow {
+  color: var(--prompt-warning-icon-color) !important;
+  background-color: var(--prompt-warning-bg) !important;
+}
+.btn-red {
+  color: var(--prompt-danger-icon-color) !important;
+  background-color: var(--prompt-danger-bg) !important;
+}
+.btn-gray {
+  background-color: var(--sidebar-border-color) !important;
+  color: var(--sidebar-subtitle-color) !important;
 }
 
 .disabled {
@@ -623,9 +658,6 @@ main {
   cursor: not-allowed;
 }
 
-.hide-border-bottom {
-  border-bottom: none !important;
-}
 
 .input-focus {
   box-shadow: none;
@@ -1503,7 +1535,7 @@ search {
   }
 
   #sidebar {
-    width: $sidebar-width-large;
+  width: $sidebar-width-large;
 
     .profile-wrapper {
       margin-top: 3.5rem;
@@ -1531,3 +1563,8 @@ search {
     }
   }
 } /* min-width: 1650px */
+
+.btn-github {
+  background-color: var(--github-background-color);
+  color: var(--github-text-color);
+}

@@ -6,7 +6,9 @@
   /* Framework color */
   --main-bg: white;
   --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  --main-border-color: var(--point-color-main); /* #f3f3f3;*/
+  --point-color-main: rgb(139 116 199);
+  --point-color-weak: rgb(180, 165, 220);
 
   /* Common color */
   --text-color: #34343c;
@@ -16,8 +18,8 @@
   --label-color: #585858;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
-  --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
+  --link-color: var(--point-color-main); /*#0056b2;*/
+  --link-underline-color: var(--point-color-main‚);
   --button-bg: #ffffff;
   --btn-border-color: #e9ecef;
   --btn-backtotop-color: #686868;
@@ -62,7 +64,7 @@
   --btn-paginator-hover-color: var(--sidebar-bg);
 
   /* Posts */
-  --toc-highlight: #0550ae;
+  --toc-highlight: var(--point-color-main); /*#0550ae;*/
   --btn-share-hover-color: var(--link-color);
   --card-bg: white;
   --card-hovor-bg: #e2e2e2;
@@ -86,9 +88,9 @@
   --prompt-danger-icon-color: #df3c30;
 
   /* Tags */
-  --tag-border: #dee2e6;
+  --tag-border: var(--point-color-weak);
   --tag-shadow: var(--btn-border-color);
-  --tag-hover: rgb(222, 226, 230);
+  --tag-hover: var(--point-color-weak);
   --search-tag-bg: #f8f9fa;
 
   [class^='prompt-'] {
@@ -108,4 +110,8 @@
   --timeline-color: rgba(0, 0, 0, 0.075);
   --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
+
+  /* buttons */
+  --github-background-color: #f5f5f5;
+  --github-text-color: #333;
 } /* light-scheme */

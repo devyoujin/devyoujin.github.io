@@ -1,16 +1,17 @@
 ---
 title: "[Leetcode/941] Valid Mountain Array 문제 번역/풀이"
 categories:
+  - Problem-Solving
   - Leetcode
 tags:
-  - Leetcode
-  - 🔥Problem-Solving
-  - 🟢Easy
-  - Array
-  - ☕Java
+  - leetcode
+  - leetcode_easy
+  - array
+  - java
+date: 2022-01-26 14:10:00 +0800
 ---
 
-<a href="https://leetcode.com/problems/valid-mountain-array" class="btn btn--inverse"> 문제 바로가기</a> <a href="https://github.com/dev-ujin/java-problem-solving" class="btn btn--github"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
+<a href="https://leetcode.com/problems/valid-mountain-array" class="btn-custom btn-yellow"> 문제 바로가기</a> <a href="https://github.com/dev-ujin/java-problem-solving" class="btn-custom btn-gray"><i class="fab fa-github"></i> 문제 풀이 모음집</a>
 
 # 🔥 문제
 정수 배열 `arr`가 주어지고 이 배열이 산 모양 배열일 때 `true`를 반환하여라.
@@ -23,8 +24,8 @@ tags:
 
 ![](https://assets.leetcode.com/uploads/2019/10/20/hint_valid_mountain_array.png)
 
-배열의 어느 원소를 기점으로 **좌측은 상승**하는 구간, **우측은 하강**하는 구간이어야한다. 상승하는 구간과 하강하는 구간이 **각각 1번씩 반드시 존재**해야한다.
-{: .notice--primary}
+> 배열의 어느 원소를 기점으로 **좌측은 상승**하는 구간, **우측은 하강**하는 구간이어야한다. 상승하는 구간과 하강하는 구간이 **각각 1번씩 반드시 존재**해야한다.
+{: .prompt-info}
 
 # 🔥 풀이
 ## 풀이1: 나의 풀이

@@ -1,9 +1,10 @@
 ---
 title: "[GitHub] 여러 개의 GitHub 계정 SSH로 연결하기"
 categories:
-  - Git/GitHub
+  - Tools
+  - Git&GitHub
 tags:
-  - GitHub
+  - github
 ---
 
 > how to manage multiple GitHub accounts with SSH

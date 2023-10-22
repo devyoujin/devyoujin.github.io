@@ -12,15 +12,41 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link href="../assets/css/all.css" rel="stylesheet">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
-
-    <div class="initial-content">
-      {{ content }}
+    
+    {% include_cached sidebar.html %}
+    <div id="main-wrapper">
+      {% include breadcrumbs.html %}
+      <div id="main-inner-wrapper">
+        {{ content }}
+        {% if page.toc %}
+          <aside class="sidebar__right sticky {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <details open>
+                <summary>
+                  <header><h4 class="nav__title">
+                    <i class="is--open far fa-arrow-alt-circle-down"></i>
+                    <i class="is--closed far fa-arrow-alt-circle-right"></i>
+                      {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+                </summary>
+                {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+              </details>
+            </nav>
+          </aside>
+        {% endif %}
+      </div>
+      <hr>
+      <div id="footer" class="page__footer">
+        <footer>
+          {% include footer/custom.html %}
+          {% include_cached footer.html %}
+        </footer>
+      </div>
     </div>
 
     {% if site.search == true %}
@@ -28,13 +54,6 @@
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
 
     {% include scripts.html %}
 

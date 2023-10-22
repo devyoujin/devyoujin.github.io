@@ -1,0 +1,14 @@
+{% assign menus = site.menu %}
+
+<div id="sidebar__menu">
+    <ul>
+        {% for menu in menus %}
+        <li>
+            <a href="{{ menu.link }}/">
+                <i class="{{ menu.icon}} menu-icon"></i>
+                <span class="menu-label">{{ menu.label | upcase }}</span>
+            </a>
+        </li>
+       {% endfor %}
+    </ul>
+</div>

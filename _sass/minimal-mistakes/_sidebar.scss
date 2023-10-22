@@ -18,13 +18,24 @@
   &:hover {
     opacity: 1;
   }
+
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  background-color: $lighter-gray;
+
   @include breakpoint($large) {
+    width: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($xx-large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
+    width: $right-sidebar-width;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.25rem;
     border-radius: $border-radius;
 
     &.sticky {
@@ -32,17 +43,13 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      max-height: calc(100vh - #{$nav-height} - 2em);
-
+      //max-height: calc(100vh - #{$nav-height} - 2em);
+      height: 100%;
       .h-card {
         border-bottom: 1px solid $light-gray;
         padding-bottom: 15px
       }
     }
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1.5em);
   }
 
   > * {
@@ -72,12 +79,53 @@
       height: 20px;
     }
   }
+
+  #sidebar__menu {
+    ul {
+      padding: 0 1rem;
+      margin: 0;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 0.75rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $light-gray;
+        a {
+          text-decoration: none;
+          color: $darker-gray;
+        }
+      }
+  
+      a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        color: $dark-gray;
+        transition: none !important;
+        font-weight: bold;
+  
+        .menu-icon {
+          width: 20%;
+        }
+      }
+    }
+  }
 }
 
 .sidebar__right {
+  display: inline;
+  width: 25%;
+  height: fit-content;
   margin-bottom: 1em;
   font-size: $type-size-7;
   z-index: 10;
+  height: fit-content;
 
   details {
     cursor: pointer;
@@ -124,7 +172,6 @@
     position: -webkit-sticky;
     position: sticky;
     top: 2em;
-    float: right;
 
     .toc {
       .toc__menu {
@@ -145,7 +192,6 @@
 .splash .sidebar__right {
   @include breakpoint($large) {
     position: relative;
-    float: right;
     margin-right: 0;
   }
 
@@ -160,6 +206,7 @@
 
 .author__avatar {
   display: none;
+  text-align: center;
 
   @include breakpoint($large) {
     display: block;
@@ -169,6 +216,8 @@
 
   img {
     border-radius: 50%;
+    width: 50%;
+    display: inline-block;
 
     //@include breakpoint(520px) {
       //max-width: 150px;
@@ -229,34 +278,51 @@
 }
 
 .author__urls-wrapper {
-  position: relative;
-  display: block;
   //vertical-align: middle;
   z-index: 20;
   cursor: pointer;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   li {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
     margin-bottom: 6px;
-    background-color: $lighter-gray;
+    margin-right: 0.5rem;
+    background-color: $light-gray-5;
     border-radius: $border-radius;
-  }
+    border-radius: 50%;
+    justify-content: center;
 
-  li:last-child {
+    &:last-child {
+      margin-right: 0;
+    }
+
     a {
-      margin-bottom: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        color: $darker-gray !important;
+        line-height: 1.5rem;
+      }
     }
   }
 
   .author__urls {
+    width: max-content;
     span.label {
       padding-left: 5px;
       font-size: $type-size-8;
-  
     }
-  }
-
-  @include breakpoint($large) {
-    display: block;
   }
 
   button {

@@ -62,11 +62,24 @@ $h-size-6: 1em !default; // ~16px
    Colors
    ========================================================================== */
 
-$gray: #7a8288 !default;
+/*$gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(rgb(68, 63, 63), $gray, 50%) !default;
-$lighter-gray: mix(#fff, $gray, 90%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;*/
+
+
+$lighter-gray: #f6f8fa !default;
+$light-gray: #cdcdcd  !default;
+$gray: #808080 !default;
+$dark-gray: #717171 !default;
+$darker-gray: #1d1d1d !default;
+
+$light-gray-1: #eeeeee !default;
+$light-gray-2: #e2e2e2 !default;
+$light-gray-3: #d2d8d6 !default;
+$light-gray-4: #c8cdcc !default;
+$light-gray-5: #bec4c4 !default;
 
 $background-color: #fff !default;
 $code-background-color: #fafafa !default;
@@ -151,20 +164,21 @@ $base0f: #ff5370 !default;
    Breakpoints
    ========================================================================== */
 
-$small: 600px !default;
+$small: 568px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
+$xx-large: 1460px !default;
 $max-width: $x-large !default;
 
 /*
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 300px !default;
-$right-sidebar-width: 350px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 250px !default;
+$right-sidebar-width: 300px !default;
+$right-sidebar-width-wide: 300px !default;
 
 /*
    Other

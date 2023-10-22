@@ -1,24 +1,37 @@
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
+#main-wrapper {
+  justify-content: center;
+  align-content: center;
+  padding: 0 1rem;
 
-#main {
-  @include clearfix;
-  //margin-right: auto;
-  //padding-left: 1em;
-  //padding-right: 1em;
-  padding: 0 0.5rem;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  max-width: 100%;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
+  @include breakpoint($large) {
+    margin-left: $right-sidebar-width-narrow;
+  }
 
-  @include breakpoint($x-large) {
-    max-width: $max-width;
-    //margin-left: 2%;
+  @include breakpoint($xx-large) {
+    margin-left: $right-sidebar-width;
+  }
+
+  #main-inner-wrapper {
+    display: inline-flex;
+    margin-bottom: 3rem;
+  }
+
+  #main {
+    @include clearfix;
+    //margin-right: auto;
+    //padding-left: 1em;
+    //padding-right: 1em;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    width: 75%;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
   }
 }
+
 
 body {
   display: -webkit-box;
@@ -31,21 +44,16 @@ body {
           flex-direction: column;
 }
 
-.initial-content,
 .search-content {
   flex: 1 0 auto;
 }
 
 .page {
   @include breakpoint($x-large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
     padding: 0 1rem;
   }
 
   @include breakpoint($large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width});
     padding: 0 1rem;
   }
 

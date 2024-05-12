@@ -34,7 +34,7 @@ public class ApiCaller {
 
 # [1] GET 요청 보내기
 🔽 ApiCaller.java > sendGetRequest()
-{% highlight java linenos %}
+```java
 public JSONObject sendGetRequest() {
     JSONObject data = new JSONObject();
     try {
@@ -55,11 +55,11 @@ public JSONObject sendGetRequest() {
     }
     return data;
 }
-{% endhighlight %}
+```
 
 # [2] POST 요청 보내기
 🔽 ApiCaller.java > sendPostRequest()
-{% highlight java linenos %}
+```java
 public void sendPostRequest(String content) {
     try {
       URL url = new URL(baseUrl); //URL 객체 생성
@@ -80,7 +80,7 @@ public void sendPostRequest(String content) {
         e.printStackTrace();
     }
 }
-{% endhighlight %}
+``````
 - (라인 8) `setDoOutput(true)`로 설정하면 request body에 해당하는 내용을 OutputStream을 통해 전달하겠다는 의미이다.
 
 # [3] 테스트하기

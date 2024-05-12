@@ -39,6 +39,10 @@ h1 + .post-meta {
   }
 }
 
+.page-title {
+  font-weight: bold;
+}
+
 .post-tail-wrapper {
   @extend %text-sm;
 

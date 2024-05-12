@@ -2,7 +2,7 @@
 title: "[Visual Studio Code] Leetcode 확장 프로그램"
 categories:
   - Tools
-  - Visual Studio Code
+  - Visual-Studio-Code
 tags:
   - visual_studio_code
   - leetcode

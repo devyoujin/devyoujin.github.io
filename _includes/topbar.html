@@ -28,14 +28,24 @@
               <span>{{ page.title | replace: '-', ' ' }}</span>
             {% endif %}
           {% else %}
-            {% assign words = path | split: '-' %}
-            {% capture titlecase %}
-              {% for word in words %}
-                {{ word | capitalize }}
-              {% endfor %}
-            {% endcapture %}
+            {% if path contains '&' %}
+              {% assign words = path | split: '&' %}
+              {% capture titlecase %}
+                {% for word in words %}
+                  {{ word | capitalize }}
+                {% endfor %}
+              {% endcapture %}
+              {% assign titlecase = titlecase | split: ' ' | join: '&' %}
+            {% else %}
+              {% assign words = path | split: '-' %}
+              {% capture titlecase %}
+                {% for word in words %}
+                  {{ word | capitalize }}
+                {% endfor %}
+              {% endcapture %}
+            {% endif %}
             {% if page.layout == "post" %}
-            <span><a href="/categories/{{path | relative_url }}">{{ titlecase }}</a></span>
+            <span><a href="/categories/{{path | slugify}}">{{ titlecase }}</a></span>
             {% else %}
             <span><a href="{{ path | relative_url }}">{{ titlecase }}</a></span>
             {% endif %}

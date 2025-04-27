@@ -23,10 +23,10 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://dev-ujin.github.io"
+url: "https://devyoujin.github.io"
 
 github:
-  username: dev-ujin # change to your github username
+  username: devyoujin # change to your github username
 
 #twitter:
 #  username: twitter_username # change to your twitter username
@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username # change to your twitter homepage
-    - https://github.com/dev-ujin # change to your github homepage
+    - https://github.com/devyoujin # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -89,7 +89,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: dev-ujin/dev-ujin.github.io # <gh-username>/<repo>
+    repo: devyoujin/devyoujin.github.io # <gh-username>/<repo>
     repo_id: R_kgDOGlTx0w
     category: Comments
     category_id: DIC_kwDOGlTx084CA7rj
